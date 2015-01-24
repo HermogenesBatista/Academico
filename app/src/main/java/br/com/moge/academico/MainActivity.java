@@ -1,17 +1,43 @@
 package br.com.moge.academico;
 
+import android.app.ListActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        listView = (ListView) findViewById(R.id.listViewCursos);
+
+        List<Curso> cursos = new ArrayList<>();
+
+        Curso c1 = new Curso();
+        c1.setNome("Java Desktop");
+        c1.setStatus("CONCLUIDO");
+
+        Curso c2 = new Curso();
+        c2.setNome("Desenvolvedor Android");
+        c2.setStatus("EM ANDAMENTO");
+
+        cursos.add(c1);
+        cursos.add(c2);
+
+        ListCursoAdapter adapter = ListCursoAdapter.getInstance(this, cursos);
+        listView.setAdapter(adapter);
+
     }
 
 

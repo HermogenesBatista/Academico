@@ -48,7 +48,7 @@ public class ListCursoAdapter extends BaseAdapter{
 
         if(convertView == null){
             LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.lista_de_cursos_item, parent);
+            convertView = inflater.inflate(R.layout.lista_de_cursos_item, null);
         }
 
         Curso curso = (Curso) getItem(position);

@@ -2,12 +2,9 @@ package br.com.moge.academico;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ArrayAdapter;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
@@ -15,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class ViewsActivity extends ActionBarActivity {
     private SeekBar seekBar;
     private TextView seekValue;
     private RadioGroup radioGroup;
@@ -52,7 +49,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
-            Toast.makeText(MainActivity.this, "Carregando...", Toast.LENGTH_LONG).show();
+            Toast.makeText(ViewsActivity.this, "Carregando...", Toast.LENGTH_LONG).show();
             return super.shouldOverrideUrlLoading(view, url);
         }
 

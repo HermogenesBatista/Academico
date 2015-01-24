@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ViewsActivity"
             android:label="@string/title_activity_main" >
         </activity>
     </application>

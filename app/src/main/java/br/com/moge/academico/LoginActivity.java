@@ -26,7 +26,7 @@ public class LoginActivity extends ActionBarActivity {
 
         if(edtLogin.getText().toString().equals("admin@cd.com.br") && edtPassword.getText().toString().equals("123")){
             Toast.makeText(this, "Login efetuado com sucesso!", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, ViewsActivity.class);
             startActivity(intent);
 
         }else{

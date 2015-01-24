@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ArrayAdapter;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
@@ -27,9 +28,10 @@ public class ViewsActivity extends ActionBarActivity {
 
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         seekValue = (TextView) findViewById(R.id.seekValue);
-        //configSeekBar();
+        configSeekBar();
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        configRadioGroup();
 
         spinner = (Spinner) findViewById(R.id.spinner);
         String[] alunos = new String[] {"Helder", "Hermogenes", "Guilherme", "Bruno", "Cesar"};
@@ -42,6 +44,36 @@ public class ViewsActivity extends ActionBarActivity {
 
         webView.setWebViewClient(new MyWebViewClient());
 
+    }
+
+    private void configRadioGroup() {
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton button = (RadioButton) findViewById(checkedId);
+
+                Toast.makeText(ViewsActivity.this, "Sexo: " + button.getText().toString(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void configSeekBar() {
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                seekValue.setText("R$ " + progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     public class MyWebViewClient extends WebViewClient{

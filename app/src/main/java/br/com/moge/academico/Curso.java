@@ -1,11 +1,12 @@
 package br.com.moge.academico;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by cd-107 on 24/01/2015.
  */
-public class Curso {
+public class Curso implements Serializable{
     private Long id;
     private String nome;
     private String status;

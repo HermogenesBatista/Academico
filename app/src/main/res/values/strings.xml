@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="chamada">Ainda não é cadastrado? acesse www.cd.com.br</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_curso">CursoActivity</string>
 
 </resources>

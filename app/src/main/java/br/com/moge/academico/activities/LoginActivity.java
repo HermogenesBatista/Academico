@@ -1,4 +1,4 @@
-package br.com.moge.academico;
+package br.com.moge.academico.activities;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import br.com.moge.academico.R;
 
 
 public class LoginActivity extends ActionBarActivity {

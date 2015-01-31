@@ -1,4 +1,4 @@
-package br.com.moge.academico;
+package br.com.moge.academico.activities;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import br.com.moge.academico.R;
 
 
 public class ViewsActivity extends ActionBarActivity {

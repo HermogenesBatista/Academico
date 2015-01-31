@@ -1,4 +1,4 @@
-package br.com.moge.academico;
+package br.com.moge.academico.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,6 +9,9 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.List;
+
+import br.com.moge.academico.domains.Curso;
+import br.com.moge.academico.R;
 
 /**
  * Created by cd-107 on 24/01/2015.

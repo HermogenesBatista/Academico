@@ -7,5 +7,7 @@
     <string name="chamada">Ainda não é cadastrado? acesse www.cd.com.br</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_curso">CursoActivity</string>
+    <string name="title_activity_aluno">AlunoActivity</string>
+    <string name="aluno">Listar Aluno</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package br.com.moge.academico;
+package br.com.moge.academico.domains;
 
 import java.io.Serializable;
 import java.util.Date;

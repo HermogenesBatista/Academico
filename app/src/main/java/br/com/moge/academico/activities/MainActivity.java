@@ -1,6 +1,5 @@
-package br.com.moge.academico;
+package br.com.moge.academico.activities;
 
-import android.app.ListActivity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -11,7 +10,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import br.com.moge.academico.domains.Curso;
+import br.com.moge.academico.R;
+import br.com.moge.academico.adapters.ListCursoAdapter;
 
 
 public class MainActivity extends ActionBarActivity {
